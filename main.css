@@ -7,7 +7,6 @@ html {
 
     overflow-x: hidden;
 }
-
 body {
     width: 100%;
 }
@@ -29,7 +28,6 @@ header {
 
     transition: 0.2s;
 }
-
 header h3 {
     color: white;
 
@@ -39,77 +37,33 @@ header h3 {
 
     text-align: center;
 }
-.mobile-notifier {
-    display: none;
-
-    position: absolute;
-
-    top: 8px;
-    right: 5px;
-
-    color: rgba(200,50,42,0.8);
-    font-weight: 800;
-
-    border: solid 4px rgba(200,50,42,0.8);
-
-    padding: 5px 10px 5px 10px;
-
-    border-radius: 8px;
-
-}
-.hero {
-
-    height: 70vh;
-
-    background-image: url(http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VC_CaliforniaCastles_Hero_CastelloDiAmorosa_Supplied_CastleWideFallFull_1280x640_0.jpg);
-
-    background-position: center;
-
-    background-repeat: none;
-
-    background-size: cover;
-}
-.scrim {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 30vh;
-    top: 10vh;
-    /* We're using absolute positoning here to get something that stretches across the window completely, and we know the vertical positoning of. The viewport height relative (vh) values help cover any resizing issues that might crop up. */
-    background: linear-gradient(0deg, rgba(25,25,30,0.75) 0%,rgba(35,35,40,0) 100%);
+.headspace{
+    height:50px;
 }
 
 .flex-container{
     display: flex;
     width:100%;
-    display-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;
-    padding:1%;
-    padding-right: 2%;
-
-
+    align-items:center;
 }
 .flex-container div{
-    background-color: rgb(100,0,0);
-    border-style: solid;
-    border-color: rgb(0,200,0);
-    margin-top: 7%;
-    margin-right:1%;
-    margin-left: 1%;
+    background-color: rgb(255,160,160);
+    margin: 3%;
     height:75vmin;
     width:75vmin;
-
 }
 .flex-container .wide{
+    background-color: rgb(160,240,220);
+
     height:75vmin;
-    width:75vmin;
+    width:55vmin;
 }
 
 @media(min-width :500px){
     header{
-        background-color: rgba(120, 10, 225, 0.85);
+    background-color: rgba(120, 10, 225, 0.85);
     }   
     .flex-container div{
         width:75vmin;
@@ -117,7 +71,7 @@ header h3 {
     }
     .flex-container .wide{
     height:75vmin;
-    width:75vmin;
+    width:vmin;
     }
 
 }
@@ -131,7 +85,7 @@ header h3 {
         height:45vmin;
     }
     .flex-container .wide{
-    height:45vmin;
+    height:40vmin;
     width:75vmin;
     }
 
@@ -146,7 +100,7 @@ header h3 {
         height:45vmin;
     }
     .flex-container .wide{
-    height:45vmin;
+    height:40vmin;
     width:75vmin;
     }
 }
@@ -160,7 +114,7 @@ header h3 {
         height:30vmin;
     }
     .flex-container .wide{
-    height:30vmin;
+    height:28vmin;
     width:45vmin;
     }
 }
@@ -174,7 +128,7 @@ header h3 {
         height:23vmin;
     }
     .flex-container .wide{
-    height:23vmin;
+    height:20vmin;
     width:30vmin;
     }
 }
@@ -188,7 +142,7 @@ header h3 {
         height:19vmin;
     }
     .flex-container .wide{
-    height:19vmin;
+    height:16vmin;
     width:23vmin;
     }
 }
@@ -198,11 +152,11 @@ header h3 {
         background-color: rgba(250, 235, 60, 0.85);
     }
     .flex-container div{
-        width:;
+        width:19vmin;
         height:19vmin;
     }
     .flex-container .wide{
-    height:19vmin;
+    height:16vmin;
     width:23vmin;
     }
 }
@@ -212,12 +166,15 @@ header h3 {
         background-color: rgba(200, 255, 95, 0.85);
     }
     .flex-container div{
-        height:;
-        width:;
+        width:15.5vmin;
         height:15.5vmin;
     }
     .flex-container .wide{
-    height:15.5vmin;
+    height:13vmin;
     width:19vmin;
     }
 }
+
+header{
+        background-color: rgba(230, 230, 215, 0.85);
+    }
