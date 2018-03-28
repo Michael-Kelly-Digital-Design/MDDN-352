@@ -3,178 +3,126 @@ html {
 
     font-size: 16px;
 
-    color: rgb(70,70,85);
+    color: #800000;
 
     overflow-x: hidden;
+    
+    line-height: 1.6;
+
 }
+
 body {
     width: 100%;
+    background: #fff9e5;
 }
+h1 { 
+    font-size: 10vw;
+    text-align: center;
+    }
+h3{
 
-header {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    right: 0;
-
-    height: 50px;
-
-    background-color: rgba(40, 20, 255, 0.8);
-
-    z-index: 10;
-
-    -webkit-backdrop-filter: blur(25px);
-
-    transition: 0.2s;
+    margin:auto;
+    font-size: 2.5vh;
+    text-align: center;
+    line-height: 2.6vh;
+    margin-bottom: 1.3vh;
+    margin-top:1.5vh;
 }
-header h3 {
-    color: white;
-
-    font-size: 1.6rem;
-
-    line-height: 0.1rem;
-
+p{
     text-align: center;
 }
-.headspace{
-    height:50px;
+
+.title{
+    width:50%;
+    padding-left: 15%;
+    margin:auto;
+    padding-right: 15%;
+}
+.description{
+    display: block;
+    padding: 2.5%;
+    width: 70%;
+    margin:auto;
+    padding-top: 0.1vh;
+    padding-bottom: 0.2vh;
+    margin-bottom: 1vh;
+    background-color: #ffecb3;
+    border-radius: 0.4vh;
+
 }
 
-.flex-container{
+
+.flex-parent{
     display: flex;
-    width:100%;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items:center;
-}
-.flex-container div{
-    background-color: rgb(255,160,160);
-    margin: 3%;
-    height:75vmin;
-    width:75vmin;
-}
-.flex-container .wide{
-    background-color: rgb(160,240,220);
-
-    height:75vmin;
-    width:55vmin;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-@media(min-width :500px){
-    header{
-    background-color: rgba(120, 10, 225, 0.85);
-    }   
-    .flex-container div{
-        width:75vmin;
-        height:75vmin;
-    }
-    .flex-container .wide{
-    height:75vmin;
-    width:vmin;
-    }
-
+.info{
+    border-bottom: solid 1px;
 }
 
-@media(min-width :630px){
-    header{
-        background-color: rgba(180, 40, 190, 0.85);
-    }
-    .flex-container div{
-        width:45vmin;
-        height:45vmin;
-    }
-    .flex-container .wide{
-    height:40vmin;
-    width:75vmin;
-    }
+.flex-parent div{
+    width:40%;
+    margin-left: 2.65%;
+    margin-top:1%;
+    margin-bottom: 1%;
 
 }
-
-@media(min-width :760px){
-    header{
-        background-color: rgba(210, 100, 100, 0.85);
-    }
-    .flex-container div{
-        width:45vmin;
-        height:45vmin;
-    }
-    .flex-container .wide{
-    height:40vmin;
-    width:75vmin;
-    }
+.flex-parent .title{
+    padding-left: 10%;
+    width:20%;
+}
+.header{
+    border-top: solid 4px #ffb366;
+    border-bottom: solid 4px #ffb366;
+}
+.header div{
+    width:100%;
+}
+.subhead{
+    width:100vw;
+    padding-left:25%;
+    white-space: nowrap;
 }
 
-@media(min-width :890px){
-    header{
-        background-color: rgba(210, 120, 50, 0.85);
+.divider{
+    width:80vw;
+    border-bottom: solid 1px #ffb366;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+}
+img {
+    width: 40%;
+    margin: auto;
+    margin-top:1vh; 
+    border: solid white 0.8vh;
+    margin-bottom: 1vh;
+    border-radius: 1.2vh;
+}
+@media(max-width: 600px){
+    
+    .description{
+        line-height: 1.3
     }
-    .flex-container div{
-        width:30vmin;
-        height:30vmin;
-    }
-    .flex-container .wide{
-    height:28vmin;
-    width:45vmin;
+    img{
+        width:80%;
     }
 }
+@media(min-width: 1200px){
+    .description{
+        display: block;
+        width: 1000px;
+        margin:auto;
 
-@media(min-width :1020px){
-    header{
-        background-color: rgba(235, 160, 30, 0.85);
     }
-    .flex-container div{
-        width:23vmin;
-        height:23vmin;
-    }
-    .flex-container .wide{
-    height:20vmin;
-    width:30vmin;
+    img{
+        width:400px;
     }
 }
-
-@media(min-width :1150px){
-    header{
-        background-color: rgba(245, 210, 30, 0.85);
-    }
-    .flex-container div{
-        width:19vmin;
-        height:19vmin;
-    }
-    .flex-container .wide{
-    height:16vmin;
-    width:23vmin;
-    }
-}
-
-@media(min-width :1280px){
-    header{
-        background-color: rgba(250, 235, 60, 0.85);
-    }
-    .flex-container div{
-        width:19vmin;
-        height:19vmin;
-    }
-    .flex-container .wide{
-    height:16vmin;
-    width:23vmin;
-    }
-}
-
-@media(min-width :1410px){
-    header{
-        background-color: rgba(200, 255, 95, 0.85);
-    }
-    .flex-container div{
-        width:15.5vmin;
-        height:15.5vmin;
-    }
-    .flex-container .wide{
-    height:13vmin;
-    width:19vmin;
-    }
-}
-
-header{
-        background-color: rgba(230, 230, 215, 0.85);
-    }
